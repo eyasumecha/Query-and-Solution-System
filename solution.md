@@ -1,3 +1,4 @@
+|Institution|Size|   
 |Western Governors University|88921|
 |Southern New Hampshire University|80170|
 |University of Phoenix-Arizona|70241|
