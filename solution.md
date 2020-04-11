@@ -1,10 +1,23 @@
-#Question A Answer - wget https://ed-public-download.app.cloud.gov/downloads/Most-Recent-Cohorts-Scorecard-Elements.csv|
-#Question B Answer - head -1 scorecard.csv| tr. " " | wc -w|
-#Question C Answer - grep "Dartmouth College" scorecard.csv|
-#Question D Answer - sed -n '/Dartmouth College/,/Southern New Hampshire Univeristy/p' scorecard.csv|
-#Question E ANswer - cut -d , -f 4,86 scorecard.csv|
-#Question F Answer - cut -d , -f 4,86 scorecard.csv| sort -t',' -k 2 -n -r | head -10
-#Question G Answer - cut -d , -f 4,86 scorecard.csv| sort -t',' -k 2 -n -r | sed -e 's/,/|/g' -e 's/.*/|&|/' | head -10
+#Question A
+ Answer - wget https://ed-public-download.app.cloud.gov/downloads/Most-Recent-Cohorts-Scorecard-Elements.csv|
+
+#Question B 
+ Answer - head -1 scorecard.csv| tr. " " | wc -w|
+
+#Question C 
+ Answer - grep "Dartmouth College" scorecard.csv|
+
+#Question D 
+ Answer - sed -n '/Dartmouth College/,/Southern New Hampshire Univeristy/p' scorecard.csv|
+
+#Question E
+ Answer - cut -d , -f 4,86 scorecard.csv|
+
+#Question F
+ Answer - cut -d , -f 4,86 scorecard.csv| sort -t',' -k 2 -n -r | head -10
+
+#Question G 
+ Answer - cut -d , -f 4,86 scorecard.csv| sort -t',' -k 2 -n -r | sed -e 's/,/|/g' -e 's/.*/|&|/' | head -10
 
 |Institution|Size|
 |---|---|
@@ -20,4 +33,5 @@
 |Miami Dade College|49443|
 
 
-#Question H Answer - cut -d , -f 6 scorecard.csv| sed '1d'| sort | uniq -c | sort -rn
+#Question H
+ Answer - cut -d , -f 6 scorecard.csv| sed '1d'| sort | uniq -c | sort -rn
